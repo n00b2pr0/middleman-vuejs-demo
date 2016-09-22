@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import "normalize";
+
+body {
+  background: white;
+  text-align: center;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: DIMGRAY;
+}
+
+.middleman-logo,
+.vue-logo {
+  display: inline-block;
+
+   img {
+    height: 12em;
+    margin: 6em .25em 2em;
+    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1em; }
+
+section {
+  max-width: 37.5em;
+  margin: 3em auto;
+}
+
+.doc {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+
+  a {
+    display: inline-block;
+    border: 1px solid blue;
+    border-radius: 3px;
+    padding: 0.75em 0.7em;
+    color: blue;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: color 0.1s linear;
+    &:hover {
+      background: rgba(blue ,0.2);
+      color: blue;
+      transition: all 0.15s linear;
+    }
+  }
+}
+
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s;
+}
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}

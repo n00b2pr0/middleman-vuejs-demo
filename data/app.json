@@ -1,0 +1,6 @@
+{
+  "name": "Middleman + Vue",
+  "description": "A sample project using Middleman 4 and Vue.js 2.0-rc",
+  "vueDocsURL": "https://rc.vuejs.org/guide/",
+  "middlemanDocsURL": "https://middlemanapp.com"
+}

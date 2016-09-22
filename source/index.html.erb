@@ -1,0 +1,21 @@
+---
+title: Middleman + Vue
+---
+
+<div class="welcome">
+  <div class="middleman-logo">
+    <%= image_tag 'middleman-logo.svg' %>
+  </div>
+  <div class="vue-logo">
+    <%= image_tag 'vue-logo.svg' %>
+  </div>
+  <h1>{{ name }}</h1>
+  <p class="doc">{{ description }}</p>
+  <section class="doc">
+    <%= link_to('Read {{ nameifyURL(middlemanDocsURL) }} Documentation Online', '#', {}, {'v-bind:href': 'middlemanDocsURL', target: '_blank'}) %>
+  </section>
+
+  <section class="doc">
+    <%= link_to('Read {{ nameifyURL(vueDocsURL) }} Documentation Online', '#', {}, {'v-bind:href': 'vueDocsURL', target: '_blank'}) %>
+  </section><!-- .doc -->
+</div><!-- .welcome -->

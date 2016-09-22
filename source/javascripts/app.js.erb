@@ -1,0 +1,19 @@
+// Root Vue instance
+new Vue({
+  el: '#app',
+  data: <%= data.app.to_json %>, // JSON passed from Middleman data helper
+  methods: {
+    humanizeURL: function (url) {
+      return url
+        .replace(/^https?:\/\//, '')
+        .replace(/\/$/, '')
+    },
+    nameifyURL: function (url) {
+      return url
+        .replace(/^https?:\/\//, '')
+        .replace(/app|js/, '')
+        .split('.').reverse()[1]
+        .replace(/\/$/, '')
+    }
+  }
+})
