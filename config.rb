@@ -37,7 +37,7 @@ end
 
 # Build-specific configuration
 configure :development do
-  config[:vue] = 'https://unpkg.com/vue@next/dist/vue.js'
+  config[:vue] = 'https://unpkg.com/vue/dist/vue.js'
 
   activate :livereload
 end
@@ -47,7 +47,7 @@ configure :build do
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/vendor/*'
 
-  config[:vue] = 'https://unpkg.com/vue@next/dist/vue.min.js'
+  config[:vue] = 'https://unpkg.com/vue/dist/vue.min.js'
 
   activate :minify_css
   activate :minify_javascript
